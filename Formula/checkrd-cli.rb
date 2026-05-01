@@ -5,21 +5,21 @@ class CheckrdCli < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "86208352b767f6e9aebfc049c54183241a09af0023e6f6f94c5b4184f392f7fd"
+      sha256 "5783899394c48475c2e937c7bb8aceab4ade99988eeee9d63dd4686fc315e1e9"
     end
     if Hardware::CPU.intel?
       url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "bcb8e4b805f2b239b7c4c939ba23d76f22cd5afedb80492058ff094ce65a97b6"
+      sha256 "6becbd2daf825626cd4cf955e34e72ee00043928cc171249816d16321dadc337"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6ec9e7eab9ee700232bac39c694afeb6ac0a9e4cb35b6abb6d9e73cc5892ba17"
+      sha256 "8c9881b571e84c230b3f4cee209e23d07827fa7f4bbf0b4b774286272eec1f27"
     end
     if Hardware::CPU.intel?
       url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "481ce2a46c231d8271ae61f353de7f781e76108f33580569941250d7e3c853f7"
+      sha256 "88bda8bc54c0e52d7a5046f3ec73e12c73fedc42fa457ddf3a1fbb92c0ebc30e"
     end
   end
   license "Apache-2.0"
