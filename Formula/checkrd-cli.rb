@@ -1,28 +1,29 @@
 class CheckrdCli < Formula
   desc "Checkrd command-line interface — control plane operations from your terminal."
   homepage "https://checkrd.io"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "5783899394c48475c2e937c7bb8aceab4ade99988eeee9d63dd4686fc315e1e9"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.1/checkrd-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "ff897d1f19e9b264febf4ace9d0ea6e3ac4873fe0b72ab237bb152223483639d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "6becbd2daf825626cd4cf955e34e72ee00043928cc171249816d16321dadc337"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.1/checkrd-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "c43c01a4b81201f2b3e8e44f71480fafd068100e2607cac11c5a758865287041"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8c9881b571e84c230b3f4cee209e23d07827fa7f4bbf0b4b774286272eec1f27"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.1/checkrd-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8d76e493a7dff60d042dc4a1532aa255e4131224e0a1357d51b1d25c00239a01"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.0/checkrd-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "88bda8bc54c0e52d7a5046f3ec73e12c73fedc42fa457ddf3a1fbb92c0ebc30e"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.1/checkrd-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0ce5330cc539aafd8c40a8729f841cccce4ab691dd80cea64c0598202848943f"
     end
   end
   license "Apache-2.0"
+  link_overwrite "bin/checkrd"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
