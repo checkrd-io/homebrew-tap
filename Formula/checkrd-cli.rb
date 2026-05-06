@@ -1,25 +1,25 @@
 class CheckrdCli < Formula
   desc "Checkrd command-line interface — control plane operations from your terminal."
   homepage "https://checkrd.io"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.3/checkrd-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "11cb401a7d57030040750bd78d5eb054803af37c8c383e4e449187ca4bfe4fbf"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.4/checkrd-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "915f78f5ac3de6c102f2931e137fd22e9d96793d0375870d9bd47a37d80b2669"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.3/checkrd-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "eaf5da29e581cd15a01aa0ad0975638aa101e2dff5bf1c0bf0c4517d573618ba"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.4/checkrd-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "8d743f5bedd2650703e7f44b562549616d32c796eeca2f2d75cd7cb260f9063c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.3/checkrd-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cd10dbb33f1224b12342f8ef69d3e1b1b0102749e5e5f6c2e40325327810df05"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.4/checkrd-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "241b06a75a3333447922ede677b4545151e9126498129eb117b943e456d0b59a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.3/checkrd-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4a58c8ce84014834af5aa53c75b4345a8296df0fbca9d14c9f3d71a9aebb9444"
+      url "https://github.com/checkrd-io/checkrd-cli/releases/download/checkrd-cli-v0.1.4/checkrd-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2d8b78d85e83de133d41eaec350aa4835124426c12405c933dfdeb8990430ba1"
     end
   end
   license "Apache-2.0"
